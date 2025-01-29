@@ -29,5 +29,6 @@ namespace Project.DAL.Contexts
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<UserAccountType> UserMemberShips { get; set; }
         public DbSet<ProductDiscount> ProductDiscounts { get; set; }
+
     }
 }
