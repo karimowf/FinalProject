@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Project.Domain.Entities
+﻿namespace Project.Domain.Entities
 {
     public enum ProductCondition
     {
@@ -12,7 +6,7 @@ namespace Project.Domain.Entities
         LikeNew,           
         Used,              
         Refurbished,       
-        ForPartsOrRepair
+        ForPartsOrRepair,
+        None
     }
-
 }

@@ -1,16 +1,18 @@
 ﻿using Project.DAL.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project.DAL.UnitOfWorkModel
 {
     public interface IUnitOfWork
     {
         ICategoryRepository CategoryRepository { get; }
+        ICartRepository CartRepository { get; }
+        IProductRepository ProductRepository { get; }
+        IComparisonRepository ComparisonRepository { get; }
+        IOrderRepository OrderRepository { get; }
+        IDiscountRepository DiscountRepository { get; }
+        IReviewRepository ReviewRepository { get; }
+        INotificationRepository NotificationRepository { get; }
         int Commit();
-        Task<int> CommitAsync(); 
+        Task<int> CommitAsync();
     }
 }

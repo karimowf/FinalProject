@@ -14,6 +14,7 @@ namespace Project.Domain.Entities
         BankTransfer,
         MobilePayment,
         DigitalWallet,
-        Cryptocurrency
+        Cryptocurrency,
+        None
     }
 }

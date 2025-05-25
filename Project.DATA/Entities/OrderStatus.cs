@@ -13,6 +13,7 @@ namespace Project.Domain.Entities
         Shipped,           
         InTransit,         
         Delivered,         
-        Canceled           
+        Canceled,
+        None
     }
 }

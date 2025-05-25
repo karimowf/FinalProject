@@ -25,5 +25,6 @@ namespace Project.Domain.Entities
         public ICollection<OrderDetail> OrderDetails { get; set; }
         public ICollection<Discount> Discounts { get; set; }
         public ICollection<ProductDiscount> ProductDiscounts { get; set; }
+        public ICollection<Notification> Notifications { get; set; }
     }
 }

@@ -16,6 +16,7 @@ namespace Project.Domain.Entities
         public string Street { get; set; }
         public string PostCode { get; set; }
         public DateTime OrderDate { get; set; }
+        public bool IsShow { get; set; }
         public User User { get; set; }
         public ICollection<OrderStatusHistory> OrderStatusHistories { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; }

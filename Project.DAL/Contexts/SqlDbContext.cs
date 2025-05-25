@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.DAL.Contexts
 {
-    public class SqlDbContext : IdentityDbContext<User, Role, string>
+    public class SqlDbContext : IdentityDbContext<User, Role, int>
     {
         public SqlDbContext(DbContextOptions<SqlDbContext> options) : base(options)
         {
@@ -29,6 +29,6 @@ namespace Project.DAL.Contexts
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<UserAccountType> UserMemberShips { get; set; }
         public DbSet<ProductDiscount> ProductDiscounts { get; set; }
-
+        public DbSet<Notification> Notifications { get; set; }
     }
 }

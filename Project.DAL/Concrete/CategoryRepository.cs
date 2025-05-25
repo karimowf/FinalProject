@@ -3,6 +3,7 @@ using MongoDB.Driver.Core.Operations;
 using Project.DAL.Abstract;
 using Project.DAL.Contexts;
 using Project.Domain.Entities;
+using Project.Domain.Patterns.BuilderPatterns.Directors.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace Project.DAL.Concrete
     public class CategoryRepository : ICategoryRepository
     {
         private readonly MongoDbContext mongoDbContext;
-        public CategoryRepository(MongoDbContext mongoDbContext)
+        public CategoryRepository(MongoDbContext mongoDbContext, ICategoryQueryDirector categoryQueryDirector)
         {
             this.mongoDbContext = mongoDbContext;
         }

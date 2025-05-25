@@ -20,8 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CQRS\Command\Response\" />
-    <Folder Include="CQRS\Query\" />
+    <Folder Include="Abstract\" />
+    <Folder Include="Patterns\CQRS\Handler\Cart\QueryHandler\" />
+    <Folder Include="Patterns\CQRS\Handler\Category\QueryHandler\" />
   </ItemGroup>
 
 </Project>

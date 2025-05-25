@@ -48,6 +48,10 @@ namespace Project.DAL.TypeConfigures
             builder.HasMany(p => p.OrderDetails)
                 .WithOne(od => od.Product)
                 .HasForeignKey(od => od.ProductId);
+
+            builder.HasMany(p => p.Notifications)
+               .WithOne(n => n.Product)
+               .HasForeignKey(n => n.ProductId);
         }
     }
 }

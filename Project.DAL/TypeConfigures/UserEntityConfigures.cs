@@ -1,12 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Project.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Project.DAL.TypeConfigures
 {
@@ -29,6 +23,10 @@ namespace Project.DAL.TypeConfigures
             builder.HasMany(u => u.UserAccountTypes)
            .WithOne(ums => ums.User)
            .HasForeignKey(ums => ums.UserId);
+
+            builder.HasMany(u => u.Notifications)
+          .WithOne(n => n.User)
+          .HasForeignKey(n => n.UserId);
         }
     }
 }
